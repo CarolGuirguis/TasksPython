@@ -1,0 +1,57 @@
+1-
+string = input("Enter your string: ")
+string=string.lower()
+vowels=['a','e','i','o','u']
+count=0
+for x in string:
+    if x in vowels:
+        count=count+1
+print(count)
+
+2-
+elements=[]
+for x in range(5):
+    ele=input("Enter Element: ")
+    elements.append(ele)
+elements.sort()
+print(elements)
+elements.sort(reverse=True)
+print(elements)
+
+3-
+string=input("Enter String: ")
+count=string.count("iti")
+print(count)
+
+4-
+string=input("Enter String: ")
+vowels=['a','e','i','o','u','A','E','I','O','U']
+for v in vowels:
+    if(v in string):
+        string=string.replace(v,'')
+print(string)
+
+5-
+string=input("Enter your string: ")
+indices=[]
+for x in range(len(string)):
+    if(string[x] == 'i'):
+        indices.append(x)
+print(indices)
+
+6-
+number=int(input("Enter a number: "))
+lists=[]
+for i in range(1,number+1):
+    l=[]
+    for j in range(1,i+1):
+        result= j*i
+        l.append(result)
+    lists.append(l)
+print(lists)
+
+7-
+number = int(input("Enter number of lines: "))
+
+for i in range(number):
+	print (" "*(number-1*i)+("*")+("*"*(1*i)))
